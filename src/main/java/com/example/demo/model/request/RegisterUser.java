@@ -1,5 +1,6 @@
 package com.example.demo.model.request;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 import com.example.demo.model.enums.Gender;
@@ -8,6 +9,7 @@ public class RegisterUser {
 	@NotBlank(message = "Xin vui lòng nhập tên người dùng")
 	private String username;
 	@NotBlank(message = "Xin vui lòng nhập email")
+	@Email(message = "Đây không phải là email")
 	private String email;
 	@NotBlank(message = "Xin vui lòng nhập tên")
 	private String firstName;

@@ -38,7 +38,7 @@ public class SpringSecurityConfig {
 				.authenticationEntryPoint(authenticationEntryPoint).and().exceptionHandling()
 				.accessDeniedHandler(accessDeniedHandler).and().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().authorizeRequests()
-				.antMatchers("/user/v1/**", "/api/v1/**","*").permitAll().antMatchers("/**/*swagger*/**", "/api-docs")
+				.antMatchers("/user/v1/**", "/api/v1/**","**").permitAll().antMatchers("/**/*swagger*/**", "/api-docs")
 				.permitAll().anyRequest().authenticated().and().apply(jwtConfig);
 
 		return http.build();

@@ -9,8 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 public class Da2119110301Application extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Da2119110301Application.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(Da2119110301Application.class, args);
+    }
 }
